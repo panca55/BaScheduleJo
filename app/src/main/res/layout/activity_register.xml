@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logobaschedulejo"
+        android:layout_below="@id/registerTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/registerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:hint="Password"
+        android:layout_below="@id/registerEmail"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/registerPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorButton"
+        android:onClick="register"
+        android:text="@string/register"
+        android:textColor="@android:color/white"
+        app:rippleColor="@color/colorRipple"
+        app:cornerRadius="4dp"
+        app:strokeColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/registerButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="4dp"
+        android:onClick="register"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        app:rippleColor="@color/colorRipple"
+        app:strokeColor="@android:color/black" />
+</RelativeLayout>

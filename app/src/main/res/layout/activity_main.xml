@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/loadingProgressBarMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleLarge" />
+
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/agendaInput"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:hint="Nama Agenda"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:inputType="text"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/dateInput"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/agendaInput"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Tanggal (dd/mm/yyyy)"
+        android:inputType="date"/>
+
+    <EditText
+        android:id="@+id/timeInput"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/dateInput"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Waktu (hh:mm)"
+        android:inputType="time"/>
+
+    <EditText
+        android:id="@+id/locationInput"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/timeInput"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Lokasi"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambahkan Agenda"
+        android:layout_below="@id/locationInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="tambahAgenda"/>
+
+    <ListView
+        android:id="@+id/agendaListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/addButton"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

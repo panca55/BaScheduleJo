@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BaScheduleJo</string>
+    <string name="tambahkan_agenda">Tambahkan Agenda</string>
+    <string name="tambah">Tambah</string>
+    <string name="register">Register</string>
+</resources>

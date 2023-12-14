@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "431010413988",
+    "project_id": "baschedulejo",
+    "storage_bucket": "baschedulejo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431010413988:android:bad67d2e79240efd0c1531",
+        "android_client_info": {
+          "package_name": "com.panca_nugraha.baschedulejo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9ABeDf_MDQyblurriA2BEPFAkPhKy_B8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
